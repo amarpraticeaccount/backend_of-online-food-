@@ -34,6 +34,9 @@ app.use('uploads',express.static('uploads'));
 app.listen(port,()=>{
     console.log(`server is running on port ${port}`);
 })
+app.get('/',(req,res)=>{
+    res.send('hello world');
+})
 
 
 
